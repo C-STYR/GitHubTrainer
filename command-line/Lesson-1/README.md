@@ -42,15 +42,15 @@ My feature branch is called cole/GHT so I would have run `git checkout -b cole/G
 
 After you've done that, run `git branch` again and see what's changed.
 
-### Practicing with Git
+## Practicing with Git
 
 Start by adding a new directory in the `Users` directory in this repo. You could do this on the command line, or you could right click on the `Users` directory and select `New folder`. Give the directory your name without spaces (or whatever you like, but this directory will be personal to you), something like `ColeStyron`.
 
 Now right click on your directory and add a new file (`New file`) called `hello.js`.
 
-`hello.js` will automatically open in your VS Code. Within this file, add `//` followed by a message of your choice to me. 
+`hello.js` will automatically open in your VS Code. Within this file, add `//` followed by a message of your choice to me. This message will be publicly viewable (!). 
 
-`//` is how you write comments in JavaScript files.  Comments are ignored by the compiler, so you can write anything on a line that starts with `//` without worrying that it will affect the code.  Have a look in the `ColeStyron` directory at the `hello.js` file there to see what I mean. 
+`//` is how you write comments in JavaScript files.  Comments are ignored by the compiler, so you can write anything on a line that starts with `//` without worrying that it will affect the code.  Have a look in the `ColeStyron` directory in `Users`. Within it you will find a `hello.js` file there; have a peep at the file's contents to see what I mean. 
 
 OK, now that that's done, we're ready to save our work, by which of course I mean `commit` it.
 
@@ -76,3 +76,20 @@ I get the following back (yours may differ slightly):
 
 ![first commit message](../../assets/first-commit.png)
 
+You'll notice that the first little bit of code returned from git was the line `[cole/GHT 582952c] added new user`.  This is a reference to the branch and the commit itself, which is a unique string of numbers/letters, followed by the commit message. Success!
+
+But wait...what did we accomplish? More than you might think!
+
+- we navigated through the file structure on the command line
+- we learned to add folders to our workspace in VS Code
+- we learned to create a feature branch locally
+- we added files and directories to our file tree
+- we staged files by `adding` them
+- we committed those files
+
+### So what's next? 
+
+Next steps: 
+
+- create a pull request
+- merge our code into 

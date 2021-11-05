@@ -57,4 +57,4 @@ My terminal window looks like this:
 
 That's it, you're finished with this step. The next thing to do is to install [VS Code](https://code.visualstudio.com/) or the code editor of your choice. I recommend VS Code because it's the modern standard and has an integrated terminal window. If you want to use a different editor, have at it, but these instructions will assume you're using VS Code and you'll need to adapt them to use with your editor. 
 
-Next step: Lesson One
+Next step: [Lesson One](https://github.com/C-STYR/GitHubTrainer/tree/main/command-line/Lesson-1)

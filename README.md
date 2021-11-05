@@ -23,7 +23,7 @@ So what's GitHub? It's a free (mostly) service that allows you to store your cod
 
 You will have to have a GitHub (hereafter GH) account to use this trainer, so please make one [here](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account). You don't need any sort of paid account, a free personal account is fine. 
 
-If you are going to interact with GH on the command line, please start here. 
+If you are going to interact with GH on the command line, please start [here](https://github.com/C-STYR/GitHubTrainer/tree/main/command-line). 
 
 If you are going to interact with GH using the web GUI, please start here. 
 
