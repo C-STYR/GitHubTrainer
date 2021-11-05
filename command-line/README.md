@@ -31,7 +31,7 @@ cd Documents
 ```
 Now your `~` should have changed to `Documents` as you are no longer in the root directory but now in the Documents directory.
 
-Let's make a new folder for your repo. You can call it whatever you want.  You might have mulitple repos in this directory down the road, so don't call it `GitHubTrainer` (that's what the repo itself is called). Just make sure it's one word, or multiple words without spaces, delineated by capital letters like `MyRepos`.
+Let's make a new folder for your repo. You can call it whatever you want.  You might have mulitple repos in this directory down the road, so don't call it `GitHubTrainer` (that's what the repo itself is called). Just make sure it's one word, or multiple words without spaces, each starting with a capital letter like `MyRepos`.
 
 I'm going to call mine `MyRepos` for the purposes of the the example. Now type this:
 ```
@@ -44,7 +44,7 @@ Now it's time to clone the repo.  To do that, we're going to use the `git clone`
 ```
 git clone https://github.com/C-STYR/GitHubTrainer.git
 ```
-Your terminal will now say something like `Cloning into "GitHubTrainer" while it copies the files.  When it's finished you'll see another prompt. Run this:
+Your terminal will now say something like `Cloning into "GitHubTrainer"` while it copies the files.  When it's finished you'll see another prompt. Run this:
 ```
 cd GitHubTrainer
 ls
