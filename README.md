@@ -13,9 +13,17 @@ To use this repo, you can either use GitHub's web interface (or GUI - guided use
 
 What's the command line? It's a way for you to interact directly with your computer by typing a series of commands the computer can understand. There are various ways to do this on various operating systems, but in keeping with the times we'll focus on MacOS and Linux machines' Terminal. 
 
-Open the Terminal on your machine (you'll have to figure this out on your own). You'll see a prompt in which you can write commands, and this is where we are going to write commands to interact with git and GitHub.
+Open the Terminal on your machine (you'll have to figure this out on your own). You'll see a prompt in which you can write commands, and this is where we are going to write commands to interact with git and GitHub. For now, try this command: 
+```
+ls -a
+```
+You should see a list of files and directories. OK, that's all for now, you can close Terminal.
 
 So what's GitHub? It's a free (mostly) service that allows you to store your code in online "repositories", which mirror the repositories of code on your own computer. GitHub allows collaboration between different users and often acts as the main source of code for a website. For example, many commercial websites' codebases are stored, modified and shared on GitHub and are then distributed to a hosting service to be delivered out into the world. 
 
 You will have to have a GitHub (hereafter GH) account to use this trainer, so please make one [here](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account). You don't need any sort of paid account, a free personal account is fine. 
+
+If you are going to interact with GH on the command line, please start here. 
+
+If you are going to interact with GH using the web GUI, please start here. 
 
