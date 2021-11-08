@@ -1,0 +1,18 @@
+---
+randomVariable: bla bla bla
+anotherRandomVariable: notice the use of "camelCase" in the variable title - a good convention to follow!
+events: 
+  - title: Model Event
+    description: Welcome to Model Event! We love what we do, which is provide a model event for burgeoning techies to replicate. Remember to use the proper format for all fields.
+    start-date: 2022-02-23
+    end-date: 2022-02-24
+    link: "www.example-url.com"
+    location: Miramar, CA
+  - title: Another Model Event
+    description: If you liked Model Event, you'll love Another Model Event!
+    start-date: 2022-05-03
+    end-date: 2022-05-04
+    link: "www.example-url.com" 
+    location: Fightertown, USA
+thirdRandomVariable: I am not part of "events", so please don't put an event within my scope!
+---
