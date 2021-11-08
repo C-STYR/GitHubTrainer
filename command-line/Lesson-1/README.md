@@ -92,4 +92,6 @@ But wait...what did we accomplish? More than you might think!
 Next steps: 
 
 - create a pull request
-- merge our code into 
+- merge our code into main
+
+Ready for Lesson 2?
