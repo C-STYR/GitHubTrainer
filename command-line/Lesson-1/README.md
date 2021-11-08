@@ -94,4 +94,4 @@ Next steps:
 - create a pull request
 - merge our code into main
 
-Ready for Lesson 2?
+Ready for [Lesson 2](https://github.com/C-STYR/GitHubTrainer/tree/main/command-line/Lesson-2)?

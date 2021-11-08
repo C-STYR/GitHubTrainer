@@ -1,7 +1,7 @@
 # Lesson 2
 
 These lessons are linear, so please make sure you have completed Lesson 1 before beginning this lesson. You should: 
-- have added a directory to the Users directory whose title is specific to you, e.g. YourName
+- have added a directory to the Users directory whose title is specific to you, e.g. `ColeStyron`
 - have added a `hello.js` file to that directory with a comment in it
 - successfully committed both directory and file
 
@@ -26,4 +26,26 @@ Now the code that I created (a new directory and a new file) are in the origin r
 
 Merging is taking the changes, additions, and deletions from one branch and combining them with another. When we want to merge the code from a feature branch into the main branch in our origin repo, we need to make a `pull request`. Pull requests can be approved or denied. Only if they're approved can the code from the feature branch be merged. 
 
-Point your browser to [the origin repo: github.com/C-STYR/GitHubTrainer](https://github.com/C-STYR/GitHubTrainer). Since you just pushed code to a feature branch in this repo, you should see a message across the top of the screen inviting you to submit a PR. 
+Point your browser to [the origin repo: github.com/C-STYR/GitHubTrainer](https://github.com/C-STYR/GitHubTrainer). Since you just pushed code to a feature branch in this repo, you should see a message across the top of the screen inviting you to submit a PR. You can click there or follow these steps: 
+
+1. Click `Pull requests` from the top nav menu running left-right across the top of the screen
+2. Under `Compare changes` click the box that says `compare: main` and change it to your feature branch from the dropdown menu
+3. You should now see a green checkmark with the words `Able to merge`. 
+4. Click `Create pull request`
+5. You'll arrive at a screen where you can formalize your PR.  The title of the PR will be auto-populated with your commit message; you can leave it as is, or gussy it up a bit and add in any notes you like. If you're doing this in a professional setting, you will probably want to make follow your organization's standards.
+6. I'm going to make mine "Added user ColeStyron" and in the comments field add "- added ColeStyron/hello.js"
+7. Click `Create pull request` below the comments field.
+
+You're now going to see some red exes and messages like "Review required" and "Merging is blocked". Perfect! This means our security is working. You'll now have to wait for your PR to be approved. You can check back by visiting the [pull requests page](https://github.com/C-STYR/GitHubTrainer/pulls) in this repo, or depending on your GitHub settings you might get an automatic email notification when your PR has been approved. 
+
+Once your PR is approved, you can merge it yourself (everything should be lovely and green) by clicking `Confirm and merge`. That's it, the code is now part of the codebase. You will be see a prompt that says `[your branch] can now be safely deleted`, and you should delete it using the provided button.
+
+### So what's next? 
+
+Next steps: 
+
+- The Single Source of Truth
+- Data flow direction
+- Pulling code down 
+
+Ready for [Lesson 3](https://github.com/C-STYR/GitHubTrainer/tree/main/command-line/Lesson-3)?
