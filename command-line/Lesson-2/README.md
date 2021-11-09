@@ -26,15 +26,16 @@ Now the code that I created (a new directory and a new file) are in the origin r
 
 Merging is taking the changes, additions, and deletions from one branch and combining them with another. When we want to merge the code from a feature branch into the main branch in our origin repo, we need to make a `pull request`. Pull requests can be approved or denied. Only if they're approved can the code from the feature branch be merged. 
 
-Point your browser to [the origin repo: github.com/C-STYR/GitHubTrainer](https://github.com/C-STYR/GitHubTrainer). Since you just pushed code to a feature branch in this repo, you should see a message across the top of the screen inviting you to submit a PR. You can click there or follow these steps: 
+Point your browser to [the origin repo: github.com/C-STYR/GitHubTrainer](https://github.com/C-STYR/GitHubTrainer). Since you just pushed code to a feature branch in this repo, you should see a message across the top of the screen inviting you to submit a PR. You can click `Compare & pull request` there or follow these steps: 
 
 1. Click `Pull requests` from the top nav menu running left-right across the top of the screen
-2. Under `Compare changes` click the box that says `compare: main` and change it to your feature branch from the dropdown menu
-3. You should now see a green checkmark with the words `Able to merge`. 
-4. Click `Create pull request`
-5. You'll arrive at a screen where you can formalize your PR.  The title of the PR will be auto-populated with your commit message; you can leave it as is, or gussy it up a bit and add in any notes you like. If you're doing this in a professional setting, you will probably want to make follow your organization's standards.
-6. I'm going to make mine "Added user ColeStyron" and in the comments field add "- added ColeStyron/hello.js"
-7. Click `Create pull request` below the comments field.
+2. Click `New pull request` on the right hand side of the screen
+3. Under `Compare changes` click the box that says `compare: main` and change it to your feature branch from the dropdown menu
+4. You should now see a green checkmark with the words `Able to merge`. 
+5. Click `Create pull request`
+6. You'll arrive at a screen where you can formalize your PR.  The title of the PR will be auto-populated with your commit message; you can leave it as is, or gussy it up a bit and add in any notes you like. If you're doing this in a professional setting, you will probably want to make follow your organization's standards.
+7. I'm going to make mine "Added user ColeStyron" and in the comments field add "- added ColeStyron/hello.js"
+8. Click `Create pull request` below the comments field.
 
 You're now going to see some red exes and messages like "Review required" and "Merging is blocked". Perfect! This means our security is working. You'll now have to wait for your PR to be approved. You can check back by visiting the [pull requests page](https://github.com/C-STYR/GitHubTrainer/pulls) in this repo, or depending on your GitHub settings you might get an automatic email notification when your PR has been approved. 
 
