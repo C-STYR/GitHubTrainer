@@ -20,7 +20,11 @@ You are going to be working in your code editor, editing and adding files and wr
 
 Git uses `branches` to allow users to modify code safely, without changing the base code, until the changes are verified and proven. The `main` branch is the base code, and is not modified directly. Instead, a `feature branch` is created, tested, approved, and eventually `merged` into the main branch, at which time it becomes part of the base code. 
 
-Open the integrated terminal window in VS Code (or a separate terminal window) and navigate to this repo, wherever you stored it. For me, that might look something like:
+Open the integrated terminal window in VS Code [following these instructions](https://code.visualstudio.com/docs/editor/integrated-terminal) (or a separate terminal window) and navigate to this repo, wherever you stored it. You may need to navigate to your home directory before following this path. To navigate to home from any location, type:
+```
+cd ~
+```
+Then navigate to this repo. For me, that might look something like:
 ```
 cd Documents
 cd MyRepos
@@ -54,7 +58,7 @@ Now right click on your directory and add a new file (`New file`) called `hello.
 
 OK, now that that's done, we're ready to save our work, by which of course I mean `commit` it.
 
-Now, on the command line (this means "at the prompt in your terminal window"), verify you're working in your feature branch and not the main branch by running `git branch`.  If you're accidentally still in `main`, run the `git checkout [branch name]` as above.
+Now, on the command line (this means "at the prompt in your terminal window"), verify you're working in your feature branch and not the main branch by running `git branch`.  If you're accidentally still in `main` (if you see `* main`, this applies to you), run the `git checkout [branch name]` as above.
 
 It's time to stage some files for commit. Run:
 ```
