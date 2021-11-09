@@ -86,7 +86,7 @@ OK, here are the git commands for the instructions above.  If you need help with
 
 1. From `main`, run `git checkout -b new-branch`
 2. Add the new file by right-clicking on your directory and selecting `New file` from the dropdown menu
-5. `git add Users` and `git commit -m "added my goals"`
+5. `git add Users/goals.js` and `git commit -m "added my goals"`
 6. `git push origin new-branch`
 
 
