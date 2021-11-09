@@ -2,7 +2,7 @@
 
 ## Requesting Access
 
-In order to be able to participate, you'll need to be added to this repo as a collaborator. To do so, please send an email to [colestyron@gmail.com](mailto:colestyron@gmail.com) with ACCESS REQUEST in the subject line.
+In order to participate, you'll need to be added to this repo as a collaborator. To do so, please send an email to [colestyron@gmail.com](mailto:colestyron@gmail.com) with ACCESS REQUEST in the subject line.
 
 ## Cloning the repo
 
