@@ -1,5 +1,9 @@
 # Using the command line
 
+## Requesting Access
+
+In order to participate, you'll need to be added to this repo as a collaborator. To do so, please send an email to [colestyron@gmail.com](mailto:colestyron@gmail.com) with ACCESS REQUEST in the subject line and your GitHub username in the body of the email.
+
 ## Cloning the repo
 
 If you're here, you've elected to learn how to use git and GitHub on the command line. Good choice! This will help develop your understanding of some basic concepts that can only serve you in good stead as the world becomes more and more technologically focused.

@@ -5,7 +5,7 @@ A repo designed to train skills in git and GitHub free of adverse consequences.
 ## How to use this repo
 Let's start from the very beginning. 
 
-What is git? Git is open source software that allows you to track different versions of a codebase. For example, every time you make a change and save it (which is called "committing" in git-speak), the state of the codebase is preserved. This allows you to go back to previous versions (and to go forward to). Git is very complex but the core functionality is to track changes. That's all you need to know!
+What is git? Git is open source software that allows you to track different versions of a codebase. For example, every time you make a change and save it (which is called "committing" in git-speak), the state of the codebase is preserved. This allows you to go back to previous versions (and to go forward too). Git is very complex but the core functionality is to track changes. That's all you need to know!
 
 If you're starting from scratch, the first thing to do is [install git](https://docs.github.com/en/get-started/quickstart/set-up-git) on your computer. 
 
