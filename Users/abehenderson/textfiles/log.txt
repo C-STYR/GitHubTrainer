@@ -1,0 +1,4 @@
+I used mkdir Users/abehenderson/textfiles to create a new directory 'textfiles'.
+I used touch Users/abehenderson/textfiles/log.txt to create this file 'log.txt'
+I could not find a terminal command to open log.txt in the editor window, so I clicked on it with my mouse.  
+Did I cheat?
