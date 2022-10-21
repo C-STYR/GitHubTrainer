@@ -1,4 +1,4 @@
-const a = 1, b = 2, c = 3
+const a = 4, b = 5, c = 6
 
 const sum = a + b + c
 
