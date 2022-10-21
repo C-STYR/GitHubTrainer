@@ -1,3 +1,6 @@
-let a = 4, b = 5, c = 6
+const a = 5, b = 6, c = 7
 
-console.log(a, b, c)
+const sum = a + b + c 
+
+console.log(sum)
+
