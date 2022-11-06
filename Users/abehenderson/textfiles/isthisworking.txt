@@ -1,0 +1,9 @@
+// I factory reset the Macbook Pro C02V5BJDHV27 on Thursday, Nov 3rd
+    // Unfortunately, the homeschool coop is still the remote administrator for that computer.  I put in a request with the coop to have them removed as administrator and have not heard back yet.
+// Upon startup:
+    // I downloaded the latest Mac OS, Ventura 13.0
+    // I installed Homebrew
+        // Using Homebrew, I installed git and vs code
+// In VS Code:
+    // I the terminal default profle to bash
+    // I cloned         
