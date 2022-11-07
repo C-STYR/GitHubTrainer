@@ -1,13 +1,12 @@
-// On Thursday, Nov 4, I factory reset the Macbook Pro, C02V5BJDHV27
-    // Unfortunately the homeschool coop, Denali Peak, is still the remote administrator for this laptop.  I put in a request to have that removed but haven't heard back yet.
-// Upon startup I installed the newest Mac OS, Ventura 13.0 and created the account `abehenderson`
-// Next I installed Homebrew.  
-    // Using Homebrew I installed Git and VS Code
-// In VS Code:
-    // In the terminal I selected bash as the default profile
-    // I cloned the repository `C-STYR/GitHubTrainer` to Documents/LearningJavascript
-    // I opened the folder `LearningJavascript`
-    // Using the terminal I created the text file `Users/abehenderson/textfiles/isthisworking.txt`
-    // Using the terminal I opened `isthisworking.txt` and wrote this text
-// Now to see if I missed anything or screwed anything up, I'll commit this file, create a mirror branch on C-STYR/GitHubTrainer, push it to the mirror branch, and then create a pull request
-     
+On Thursday, Nov 3rd, I factory reset the Macbook Pro, C02V5BJDHV27
+    Unfortunately the homeschool coop, Denali Peak, is still the remote administrator for this laptop.  I put in a request to have that removed but haven't heard back yet.
+Upon startup I installed the newest Mac OS, Ventura 13.0 and created the account `abehenderson`
+    Next I installed Homebrew.  
+        Using Homebrew I installed Git and VS Code
+In VS Code:
+    In the terminal I selected bash as the default profile
+    I cloned the repository `C-STYR/GitHubTrainer` to Documents/LearningJavascript
+    I opened the folder `LearningJavascript`
+    Using the terminal I created the text file `Users/abehenderson/textfiles/isthisworking.txt`
+    Using the terminal I opened `isthisworking.txt` and wrote this text
+Now to see if I missed anything or screwed anything up, I'll commit this file, create a mirror branch on C-STYR/GitHubTrainer, push it to the mirror branch, and then create a pull request to merge with origin
