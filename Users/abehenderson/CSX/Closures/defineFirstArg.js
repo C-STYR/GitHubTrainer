@@ -26,7 +26,7 @@ console.log(subFrom20(5)); // should log: 15
 // Attempt #2
 
 function defineFirstArg(callback, num) {
-  return function(input) { return callback(num, input); }
+  return function(...args) { return callback(num, ...args); }
 }
 
 // Is there any advantage to using `...args` (attepmt #1) vs a standar parameter name such as `input` (attempt #2) in this scenario?
