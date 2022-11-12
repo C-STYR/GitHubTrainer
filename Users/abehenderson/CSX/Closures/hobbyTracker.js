@@ -12,13 +12,12 @@ function hobbyTracker(hobbies) {
       }
       return 'tracker has been reset!'
     } else {
-      for (const property in cache) {
-         if (hobby === property) cache[property] += hours;
-      }
+      cache[hobby] += hours;
+      return cache;
     }
-    return cache;
   }
 }
+
 
 
 const updateHobbies = hobbyTracker(['yoga', 'baking', 'piano']);
@@ -57,8 +56,9 @@ function hobbyTracker(hobbies) {
         if (string === property) cache[property] += num;
       }
         // if `string` matches a current key in `cache`, add `num` to the current value of that key    
+        // Per Cole: no need to iterate through an object using `for...in`.  Just call it directly `cache[hobby] += hours;
     }
-    return cache;
+    return cache; // this needs to be inside the `else` block, before the blue closed curly brace.
     // return `cache`
   }
   return result;
