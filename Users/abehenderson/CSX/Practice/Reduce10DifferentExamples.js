@@ -116,6 +116,7 @@ let result;
 
 // console.log(result); // logs: false
 
+
 // Challenge: make the code work with Kobe uncommented
 
 //-------------------------------------------------------------------------------------//
@@ -157,6 +158,7 @@ const orders = [
 // // This one is confusing.  Super cool and useful, but confusing.  I'm not that familiar with the rest/spread operator `...` and how does `(acc[order.status] || 0)` know which to choose?  Does it only choose zero if `acc[order.status]` is not truthy?  It does look like the conditional of an if statement.
 
 //-------------------------------------------------------------------------------------//
+
 // Flatten (Recursive Function)
 
 const folders = [
@@ -195,6 +197,7 @@ result = folders.reduce((acc, item) => (Array.isArray(item)) ? item.reduce(flatt
 console.log(result);
 
 // This is magic.  I don't understand it but it seems like magic.
+
 
 //-------------------------------------------------------------------------------------//
 // Create Reduce Ourselves
