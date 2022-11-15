@@ -99,7 +99,7 @@ let result;
 //-------------------------------------------------------------------------------------//
 // // All Over 18
 
-// For this solutions, I commented out 'Kobe Bryant' in the array `people`:
+// For these solutions, I commented out 'Kobe Bryant' in the array `people`:
 
 // // My Attempt:
 // result = people.reduce((acc, person) => {
@@ -115,6 +115,9 @@ let result;
 // }, true);
 
 // console.log(result); // logs: false
+
+
+// Challenge: make the code work with Kobe uncommented
 
 //-------------------------------------------------------------------------------------//
 // // Any Over 18
@@ -155,39 +158,46 @@ const orders = [
 // // This one is confusing.  Super cool and useful, but confusing.  I'm not that familiar with the rest/spread operator `...` and how does `(acc[order.status] || 0)` know which to choose?  Does it only choose zero if `acc[order.status]` is not truthy?  It does look like the conditional of an if statement.
 
 //-------------------------------------------------------------------------------------//
-// // Flatten (Recursive Function)
 
-// const folders = [
-//   'index.js',
-//   ['flatten.js', 'map.js'],
-//   ['any.js', ['all.js', 'count.js']],
-// ];
+// Flatten (Recursive Function)
 
-// // Leigh's 1st Solution:
-// function flatten(acc, item) {
-//   if (Array.isArray(item)) {
-//     return [...acc, ...item.reduce(flatten, [])];
-//   }
-//     return [...acc, item];
-// }
+const folders = [
+  'index.js',
+  ['flatten.js', 'map.js'],
+  ['any.js', ['all.js', 'count.js']],
+];
 
-// result = folders.reduce(flatten, []);
+// Leigh's 1st Solution:
+function flatten(acc, item) {
+  if (Array.isArray(item)) {
+    return [...acc, ...item.reduce(flatten, [])];
+  }
+    return [...acc, item];
+}
 
-// console.log(result); // logs: [ 'index.js', 'flatten.js', 'map.js', 'any.js', 'all.js', 'count.js' ]
+result = folders.reduce(flatten, []);
 
-// // Leigh's 2nd Solution:
-// function flatten(acc, item) {
-//   if(Array.isArray(item)) {
-//     return item.reduce(flatten, acc);
-//   }
-//     return [...acc, item];
-// }
+console.log(result); // logs: [ 'index.js', 'flatten.js', 'map.js', 'any.js', 'all.js', 'count.js' ]
 
-// result = folders.reduce(flatten, []);
+// Leigh's 2nd Solution:
+function flatten(acc, item) {
+  if(Array.isArray(item)) {
+    return item.reduce(flatten, acc);
+  }
+    return [...acc, item];
+}
 
-// console.log(result); // logs: [ 'index.js', 'flatten.js', 'map.js', 'any.js', 'all.js', 'count.js' ]
+result = folders.reduce(flatten, []);
 
-// // This is magic.  I don't understand it but it seems like magic.
+console.log(result); // logs: [ 'index.js', 'flatten.js', 'map.js', 'any.js', 'all.js', 'count.js' ]
+
+// Leigh's 2nd Solution Condensed:
+result = folders.reduce((acc, item) => (Array.isArray(item)) ? item.reduce(flatten, acc) : [...acc, item], []);
+
+console.log(result);
+
+// This is magic.  I don't understand it but it seems like magic.
+
 
 //-------------------------------------------------------------------------------------//
 // Create Reduce Ourselves
