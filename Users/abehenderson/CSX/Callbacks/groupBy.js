@@ -1,3 +1,32 @@
+// Attempt #2 
+  // Per Cole's Change Request:
+    // Initialize a variable equal to invoking the callback on 'el'
+    // Eliminate 'cache' and use '[el]' to temporarily store values
+
+function groupBy(arrays, callback) {
+  const obj = {};
+  arrays.forEach(el => {
+    let evRes = callback(el); // Cole: what is a better name that 'evRes'?
+    if (!obj[evRes]) {
+      obj[evRes] = [el];
+    } else {
+      [el] = obj[evRes]; // I didn't know I could use '[el]' as a variable like this
+      obj[evRes].push(el); // I didn't know I could use 'obj[evRes].push' like this!
+    }
+  });
+  return obj;
+}
+
+
+const decimals = [1.3, 2.1, 2.4];
+const floored = function(num) { return Math.floor(num); };
+console.log(groupBy(decimals, floored)); // should log: { 1: [1.3], 2: [2.1, 2.4] }
+
+
+//-------------------------------------------------------------------------------------
+
+// Attempt #1
+
 function groupBy(array, callback) {
   const obj = {};
   array.forEach(el => {
@@ -15,9 +44,9 @@ function groupBy(array, callback) {
 }
 
 
-const decimals = [1.3, 2.1, 2.4, 1.4, 3.7, 6.4, 3.9];
-const floored = function(num) { return Math.floor(num); };
-console.log(groupBy(decimals, floored)); // should log: { 1: [1.3], 2: [2.1, 2.4] }
+// const decimals = [1.3, 2.1, 2.4, 1.4, 3.7, 6.4, 3.9];
+// const floored = function(num) { return Math.floor(num); };
+// console.log(groupBy(decimals, floored)); // should log: { 1: [1.3], 2: [2.1, 2.4] }
 
 // Create a function groupBy that accepts an array and a callback, and returns an object
 // groupBy will iterate through the array and perform the callback on each element. 
