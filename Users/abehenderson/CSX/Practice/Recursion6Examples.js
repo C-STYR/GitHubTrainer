@@ -118,7 +118,27 @@ const root = {
   ],
 };
 
+function print({ node, children }) {
+  console.group(node);
+  if (children.length > 0) {
+    children.forEach(child => print(child)); // forEach is the breaking condition because when there is no array to iterate over, it will stop
+    console.groupEnd(node); // I don't fully understand this magic 'console.groupEnd', although in the video, his output logged the nodes in a more organized format.
+  } 
+}
 
+print(root); // logs:
+/*
+arabica
+  heirloom
+    bourbon
+      caturra
+        mokka
+        typica
+          kona
+            java 
+            */
+
+            
 
 
 
