@@ -74,15 +74,51 @@ function factorial(num) {
   }
 }
 
-console.log(factorial(5)); // logs: 120
+// console.log(factorial(5)); // logs: 120
 
 // Whiteboard this and Calculating The Power: 4^4.  I need to understand where and how `num` is being stored and modified.
 
 //-----------------------------------------------------------------------------------------
+// Fibonacci (kill me now :-) 
 
+function fibonacci(remainder, accumulator = [0, 1]) {
+  if (remainder <= 2) {
+    return accumulator;
+  } else {
+    const [second, last] = accumulator.slice(-2);
+    return fibonacci(remainder - 1, [...accumulator, second + last]);
+  }
+}
 
+// console.log(fibonacci(5)); // logs: [ 0, 1, 1, 2, 3 ]
+
+// Challenge: practice this without any hints or help
 
 //-----------------------------------------------------------------------------------------
+// Trees (of COFFEE!!!)
+
+const root = {
+  node: 'arabica',
+  children: [
+    { node: 'heirloom', children: [] },
+    {
+      node: 'bourbon',
+      children: [
+        { node: 'caturra', children: [] },
+        { node: 'mokka', children: [] },
+      ],
+    },
+    {
+      node: 'typica',
+      children: [
+        { node: 'kona', children: [] },
+        { node: 'java', children: [] },
+      ],
+    },
+  ],
+};
+
+
 
 
 
