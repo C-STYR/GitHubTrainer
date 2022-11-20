@@ -1,18 +1,61 @@
+// Attempt #3
+  // This should be a faster solution due to using the spread operator (or is it the rest operator?).  There is no CSX solution for this one, but I checked CSX Slack for ideas and found a solution similar to this:
 
+function shuffleCards (topArr, botArr, deck = []) {
+  if (!topArr[0]) {
+    deck.push(...botArr);
+    return deck;
+  } else if (!botArr[0]) {
+    deck.push(...topArr);
+    return deck;
+  } else {
+    deck.push(topArr[0], botArr[0]);
+    return shuffleCards(topArr.slice(1), botArr.slice(1), deck);
+  }
+}
+
+
+const topHalf = ['Queen of Diamonds', 'Five of Hearts', 'Ace of Spades', 'Eight of Clubs'];
+const bottomHalf = ['Jack of Hearts', 'Ten of Spades'];
+console.log(shuffleCards(topHalf, bottomHalf));
+
+//------------------------------------------------------------------------------------------
+// Attempt #2
+  // Ok so CSX accepted this solution.  Instead of using `.shift` which permanently alters the original array, `.slice` returns a shallow copy, so it does not actually alter the original array.
+
+function shuffleCards(topArr, botArr, deck = []) {
+  if (topArr[0] && botArr[0]) {
+    deck.push(topArr[0], botArr[0]);
+  return shuffleCards(topArr.slice(1), botArr.slice(1), deck);
+  } else if (topArr[0]) {
+    deck.push(topArr[0]);
+    return shuffleCards(topArr.slice(1), botArr.slice(1), deck);
+  } else if (botArr[0]) {
+    deck.push(botArr[0]);
+    return shuffleCards(topArr.slice(1), botArr.slice(1), deck);    
+  } else {
+    return deck;
+  }
+}
+
+// const topHalf = ['Queen of Diamonds', 'Five of Hearts', 'Ace of Spades', 'Eight of Clubs'];
+// const bottomHalf = ['Jack of Hearts', 'Ten of Spades'];
+// console.log(shuffleCards(topHalf, bottomHalf));
+
+//------------------------------------------------------------------------------------------
 // Attempt #1
   // CSX does not like this solution :-/
-  // From what I can tell, this shuffles the cards according to the instructions, prioritizing 'topHalf' cards first, then 'bottomHalf' cards.  It also takes into consideration any size of half decks.
+  // From what I can tell, this shuffles the cards according to the instructions, prioritizing 'topHalf' cards first, then 'bottomHalf' cards.  It also takes into consideration any size of the half decks.
   // CSX says:
     // "shuffleCards should interleave elements in the correct order"
-    // "expected [] to deeply equal [ Array(4) ]"
+      // "expected [] to deeply equal [ Array(4) ]"
         // and
     // "shuffleCards should append remaining elements to end of the array"  
-    // "expected [ Array(4) ] to deeply equal [ Array(6) ]"  
+      // "expected [ Array(4) ] to deeply equal [ Array(6) ]"  
 
 function shuffleCards(topHalf, bottomHalf, shuffled = []) {
   if (topHalf[0] !== undefined && bottomHalf[0] !== undefined) {
-    shuffled.push(topHalf.shift());
-    shuffled.push(bottomHalf.shift());
+    shuffled.push(topHalf.shift(), bottomHalf.shift());
     return shuffleCards(topHalf, bottomHalf, shuffled);
   } else if (topHalf[0]) {
     shuffled.push(topHalf.shift());
@@ -25,10 +68,10 @@ function shuffleCards(topHalf, bottomHalf, shuffled = []) {
   }
 }
 
-// UNCOMMENT TO TEST YOUR WORK
-const topHalf = ['Queen of Diamonds', 'Five of Hearts', 'Ace of Spades', 'Eight of Clubs'];
-const bottomHalf = ['Jack of Hearts', 'Ten of Spades'];
-console.log(shuffleCards(topHalf, bottomHalf));
+// // UNCOMMENT TO TEST YOUR WORK
+// const topHalf = ['Queen of Diamonds', 'Five of Hearts', 'Ace of Spades', 'Eight of Clubs'];
+// const bottomHalf = ['Jack of Hearts', 'Ten of Spades'];
+// console.log(shuffleCards(topHalf, bottomHalf));
   /*-> ['Queen of Diamonds',
         'Jack of Hearts',
         'Five of Hearts',
@@ -41,7 +84,7 @@ console.log(shuffleCards(topHalf, bottomHalf));
 // The first thing I need to figure out is how to alternate between 'topHalf' and 'bottomHalf'
       // or what if I don't have to alternate...what if each call of 'shuffleCards' pushes an element from each array.
 
-      
+
 
 // You are creating a card game application with your friend.
 
