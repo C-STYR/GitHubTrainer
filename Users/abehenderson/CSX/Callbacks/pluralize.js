@@ -1,8 +1,9 @@
 function pluralize(array) {
-  array.forEach((string, index) => {
-    array[index] = string.concat('s');
+  const newArray = [];
+  array.forEach(string => {
+    newArray.push(string.concat('s'));
   })
-  return array;
+  return newArray;
 }
 
 
