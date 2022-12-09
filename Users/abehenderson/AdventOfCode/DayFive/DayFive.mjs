@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 
-const data = readFileSync('abbreviatedInput.txt', 'utf-8')
+const data = readFileSync('input.txt', 'utf-8')
   .split('\n');
 
 
@@ -40,22 +40,23 @@ function formatDirections(indexOfDirections) {
   return arrOfDirections;
 }
 
+/*
+function moveBoxesP1(object, array) {
+  let newObj = object; // make a copy of the input object to modify and return
+  array.forEach((el, i) => { // iterate through the array of directions
+    const numOfBoxMoves = +el[0]; // 5th index = the number of boxes to move
+    const fromKey = +el[1]; // 12th index = move box from this key
+    const toKey = +el[2]; // 17th index = to this key
 
-// function moveBoxesP1(object, array) {
-//   let newObj = object; // make a copy of the input object to modify and return
-//   array.forEach((el, i) => { // iterate through the array of directions
-//     const numOfBoxMoves = +el[0]; // 5th index = the number of boxes to move
-//     const fromKey = +el[1]; // 12th index = move box from this key
-//     const toKey = +el[2]; // 17th index = to this key
-
-//     let counter = numOfBoxMoves; // intialize a counter equal to number of box moves
-//     while (counter > 0) { // while the counter is above zero, excecute the following:
-//       newObj[toKey].push(newObj[fromKey].pop()); // move the top box from the 'fromKey' to the 'toKey'
-//       counter--; // decrease counter by one, to account for the box move just executed
-//     }
-//   });
-//   return newObj;
-// }
+    let counter = numOfBoxMoves; // intialize a counter equal to number of box moves
+    while (counter > 0) { // while the counter is above zero, excecute the following:
+      newObj[toKey].push(newObj[fromKey].pop()); // move the top box from the 'fromKey' to the 'toKey'
+      counter--; // decrease counter by one, to account for the box move just executed
+    }
+  });
+  return newObj;
+}
+*/
 
 function moveBoxesP2(object, array) {
   let newObj = object; // make a copy of the input object to modify and return
@@ -63,21 +64,21 @@ function moveBoxesP2(object, array) {
     const numOfBoxMoves = +el[0]; // 5th index = the number of boxes to move
     const fromKey = +el[1]; // 12th index = move box from this key
     const toKey = +el[2]; // 17th index = to this key
-    //console.log(`All boxes in stack: ${newObj[fromKey]}`);
-    const boxesToMove = newObj[fromKey].splice(0 - numOfBoxMoves, numOfBoxMoves);
-    const newStack = newObj[fromKey].push(boxesToMove);
+
+    const boxesToMove = newObj[fromKey].splice(0 - numOfBoxMoves, numOfBoxMoves); // removes boxes from the stack in the form of elements in an array
+    const newStack = newObj[toKey].push(...boxesToMove); // pushes only the elements of the array to the top of the new stack
     return newStack;
-    //console.log(`Boxes to move: ${boxesToMove}`);
   });
-  console.log(newObj);
   return newObj;
 }
 
 function createMessage(obj) { // gets the letter of the top box from each stack
   let messageForTheElves = '';
   for (const property in obj) { // iterates through the input object
-    const box = obj[property].slice(-1); // assigns the last element of each object value to 'box'
-    messageForTheElves += box[0].charAt(1); // concats the box's letter to a string
+    if (obj[property].length > 0) {
+      const box = obj[property].slice(-1); // assigns the last element of each object value to 'box'
+      messageForTheElves += box[0].charAt(1); // concats the box's letter to a string
+    }
   }
   return messageForTheElves; // returns the string
 }
@@ -87,6 +88,7 @@ const stacksOfBoxes = formatStackOfBoxes(8);
 const directions = formatDirections(10);
 //const finalStackP1 = moveBoxesP1(stacksOfBoxes, directions);
 const finalStackP2 = moveBoxesP2(stacksOfBoxes, directions);
+
 console.log(createMessage(finalStackP2));
 
 
