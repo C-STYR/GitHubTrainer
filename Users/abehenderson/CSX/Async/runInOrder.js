@@ -30,8 +30,23 @@ function sayHowdy() {
 }
 
 runInOrder([sayHi, sayBye, sayHowdy], [300, 600, 200]);
-/* should log: 
+/* logs: 
 'hi' (after 300 ms) 
 'bye' (600 ms after 'hi') 
 'howdy' (200 ms after 'bye')
 */
+
+/****************************************************************************************/
+
+
+/* Codesmith Solution */
+
+function runInOrder(arrFuncs, arrNums) {
+  let time = 0;
+  for (let i = 0; i < arrFuncs.length; i++) {
+    time += arrNums[i];
+    setTimeout(arrFuncs[i], time);
+  }
+}
+
+// Codesmith solution is definitely simpler in its syntax.  Both solutions declare one variable. 
