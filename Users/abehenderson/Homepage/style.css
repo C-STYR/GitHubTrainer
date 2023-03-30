@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Create a box around the header */
+header {
+  background-color: white;
+  padding: 10px;
+  /*box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; /* horizontal list */
+  justify-content: flex-end; /* sends list to end of header */
+}
+
+nav li { /* separates list with spaces (horizontal margins) */
+  margin: 0 20px;
+}
+
+nav a {
+  color: plum;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  /* text-decoration: underline; */
+  color: mediumpurple;
+}
+
+/*      main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}*/
