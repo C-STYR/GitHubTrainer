@@ -1,4 +1,4 @@
-const a = 2, b = 8, c = 7
+const a = 2, b = 8, c = 5
 
 const sum = a + b + c
 
